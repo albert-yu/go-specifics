@@ -2,6 +2,11 @@ package specifics
 
 import "math"
 
+// EmptyStrSlice returns an empty string slice
+func EmptyStrSlice() []string {
+	return make([]string, 0)
+}
+
 // StrSliceContains checks if the string slice
 // contains the given string
 func StrSliceContains(slice []string, s string) bool {

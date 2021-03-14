@@ -1,5 +1,10 @@
 package specifics
 
+// EmptyIntSlice returns an empty, non-nil int slice
+func EmptyIntSlice() []int {
+	return make([]int, 0)
+}
+
 // IntSlicesEqual returns whether two integer arrays are
 // equal
 func IntSlicesEqual(arr1, arr2 []int) bool {
